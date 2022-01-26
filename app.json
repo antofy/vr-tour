@@ -1,0 +1,7 @@
+{
+    "stack": "heroku-18",
+    "name": "tour-player",
+    "scripts": {},
+    "env": {},
+    "addons": []
+}

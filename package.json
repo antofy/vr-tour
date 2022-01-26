@@ -1,0 +1,57 @@
+{
+  "name": "tour-player",
+  "version": "2.2.4",
+  "description": "",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Tour-360/tour-player"
+  },
+  "scripts": {
+    "postinstall": "./node_modules/bower/bin/bower i && npm run delete-models && ./node_modules/gulp/bin/gulp.js build",
+    "start": "node index.js",
+    "test": "gulp lint",
+    "delete-models": "rm -rf ./bower_components/threejs/examples/models/ && rm -rf ./bower_components/threejs-r97/examples/models/"
+  },
+  "keywords": [
+    "tour",
+    "virtual",
+    "player",
+    "360",
+    "HTML5",
+    "raw"
+  ],
+  "author": "Maxim Borodin <borodinmk@gmail.com> (http://maximborodin.ru)",
+  "contributors": [
+    {
+      "name": "Maxim Borodin",
+      "email": "borodinmk@gmail.com",
+      "url": "http://maximborodin.ru"
+    },
+    {
+      "name": "Denis Borodin",
+      "email": "borodindk@gmail.com",
+      "url": "http://denisborodin.ru"
+    }
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "bower": "^1.5.3",
+    "browser-sync": "^2.10.0",
+    "del": "^2.0.2",
+    "express": "^4.13.3",
+    "gulp": "^3.9.0",
+    "gulp-autoprefixer": "^3.0.2",
+    "gulp-cache": "^0.3.0",
+    "gulp-concat": "^2.6.0",
+    "gulp-imagemin": "^2.3.0",
+    "gulp-jscs": "^3.0.1",
+    "gulp-jshint": "^1.11.2",
+    "gulp-sftp": "^0.1.5",
+    "gulp-size": "^1.0.0",
+    "gulp-sourcemaps": "^1.5.2",
+    "gulp-stylint": "^3.0.0",
+    "gulp-stylus": "^2.1.0",
+    "gulp-uglify": "^1.4.1",
+    "main-bower-files": "^2.9.0"
+  }
+}
