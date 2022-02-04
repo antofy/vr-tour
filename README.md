@@ -36,8 +36,6 @@ Tour.on('load', function(data) {
 })
 ```
 
-See [example code](https://github.com/Tour-360/tour-player/tree/master/example)
-
 
 ## Development
 
